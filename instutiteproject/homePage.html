@@ -1,0 +1,83 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
+       <h1 class="text-center">Home Page</h1>
+       <div class="container-fluid">
+         <div class="row">
+
+
+       <div class="col-md-4" id="s1"style="  background:green">
+            <center> <h3  class="text-white" >About Institute</h3>
+             <label  class="text-white">Narayana Tech House,</label><br>
+             <label  class="text-white">Ammerpet in,</label><br>
+             <label  class="text-white">Hyderabad</label>
+           </div>
+             <div class="col-md-4"id='s1'style="  background:yellow">
+               <center>
+
+             <h3>About Goals</h3>
+             <label>Seminar,</label><br>
+             <label>presention,</label><br>
+             <label>speech</label>
+             </div>
+               <div class="col-md-4"id='s1'style="  background:orange">
+                 <center>
+               <h3>About Achievements</h3>
+               <label>Nobel prize,</label><br>
+               <label>Gold Medal,</label><br>
+               <label>Silver Medal</label>
+                 </div>
+
+           </div>
+
+         </div>
+         <div class="containerfluid mt-5">
+           <div class="row">
+             <div class="col-md-4"id='s1'style=" background:brown">
+               <h3 class=" text-center text-white"> About Founder</h3><br>
+                <center> <img src="{% static 'images/home1.jpg' %}" alt="" style="height:80%;width:80%; border-radius:50%;">
+             </div>
+             <div class="col-md-8"id="s1"style=" background:green" ><br>
+               <h4 class="text-white">Narayana Tech House is a one of popular training and placement institute and teaching,Mr.Narayana in 12years experience he is teaching almost all languages for example  python full stack , testing ,ui,mysql and django....ect.  </h4>
+                     </div>
+
+           </div>
+
+         </div>
+         <div class="containerfluid mt-5">
+           <div class="row">
+             <div class="col-md-4" id="s1" style="background:pink">
+               <h3 class="text-center text-white">Mr.Narayana Sir</h3><br>
+                 <center><img src="{% static 'images/4.jpg' %}" alt=""  style="height:100%; width:100%; border-radius:10%"><br><br>
+
+                 <h3 class="text-center text-white">12 years exp</h3>
+                 </div>
+                 <div class="col-md-4"id="s1"style=" background:purple">
+
+                     <h3 class="text-center text-white"> Django</h3><br>
+                      <center> <img src="{% static 'images/home2.jpg' %}" alt="" style="height:60%;width:60%; border-radius:50%"><br><br>
+                       <h3 class="text-center text-white"> 10 years exp</h3>
+
+                 </div>
+                   <div class="col-md-4"  id="s1" style="background:blue">
+
+                     <h3 class=" text-center text-white">Python WIth Django</h3><br>
+                    <center>  <img src="{% static 'images/4.jpg' %}" alt=""  style="height:80%; width:80%; border-radius:10%"><br><br>
+                       <h3 class="text-center text-white">20 years exp</h3>
+
+                 </div>
+
+           </div>
+         </div>
+       {% endblock %}
+     </body>
+   </html>

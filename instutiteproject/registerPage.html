@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% include 'cdnlines.html' %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-3 col-md-6">
+          <h1 class="text-center"> Register here!!!!</h1>
+          <form method="POST">
+            {% csrf_token %}
+
+             Enter your First Name :  {{ form.first_name }}<br>
+
+             Enter  your Last Name :  {{ form.last_name }}<br>
+             Enter your Email ID  :  &ensp;&nbsp; {{ form.email }}<br>
+             Enter your user Name :   {{ form.username }}<br>
+             Enter your password : &ensp; {{ form.password }}<br>
+             <div class="text-center">
+
+
+             <input type="submit" value="Register">
+
+             <input type="reset" value="Clear">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
